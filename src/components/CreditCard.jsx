@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const CreditCard = () => {
+
+export function CreditCard({ data: { type, number, expirationMonth, expirationYear, bank, owner, cssClass } }) {
   return (
-    <div>
-        <h1>La casa de papa</h1>
+    <div className='credit flex'>
+      <h3>{type}</h3>
+      <p>{number}</p>
+      <p>{expirationMonth}</p>/<p>{expirationYear}</p>
+      <p>{bank}</p>
+      <p>{owner}</p>
+      <p>{cssClass}</p>
     </div>
-  )
+  );
 }
