@@ -1,11 +1,20 @@
 import React from 'react'
 import { CreditCard } from './CreditCard'
 
-export const Ejercicio1 = ({type, number, expirationMonth, expirationYear, bank, owner, cssClass} ) => {
+export const Ejercicio1 = ({ info }) => {
+
 
     return (
         <div>
-            <CreditCard />
-        </div>
+            <CreditCard type={info.type}
+                        number={info.number}
+                        expirationMonth={info.expirationMonth} 
+                        expirationYear={info.expirationYear}
+                        bank={info.bank}
+                        owner={info.owner}
+                        cssClass={info.cssClass} />
+
+
+        </div >
     )
 }

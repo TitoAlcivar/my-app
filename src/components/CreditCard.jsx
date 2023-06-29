@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export function CreditCard({ data: { type, number, expirationMonth, expirationYear, bank, owner, cssClass } }) {
+export function CreditCard(  { type, number, expirationMonth, expirationYear, bank, owner, cssClass  }) {
   return (
     <div className='credit flex'>
       <h3>{type}</h3>

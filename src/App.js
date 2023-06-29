@@ -1,7 +1,7 @@
 import { Ejercicio1 } from "./components/Ejercicio1";
 
 export const info = {
-  type: "VISA",
+  type: <i class="fa-brands fa-cc-visa"></i>,
   number: "**** **** **** 0790",
   expirationMonth: "8",
   expirationYear: "24",
@@ -10,16 +10,12 @@ export const info = {
   cssClass: "aqua"
 }
 
+
+
 function App() {
   return (
     <>
-      <Ejercicio1 type={info.type} 
-                  number={info.number} 
-                  expirationMonth={info.expirationMonth}
-                  expirationYear={info.expirationYear}
-                  bank={info.bank}
-                  owner={info.owner}
-                  cssClass={info.cssClass}/>
+      <Ejercicio1 info={info}/>
 
     </>
   )
