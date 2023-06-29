@@ -1,7 +1,8 @@
 import React from 'react'
+import { info } from '../App';
 
 
-export function CreditCard(  { type, number, expirationMonth, expirationYear, bank, owner, cssClass  }) {
+export function CreditCard(  { type, number, expirationMonth, expirationYear, bank, owner,  }) {
   return (
     <div className='credit flex'>
       <h3>{type}</h3>
@@ -9,7 +10,6 @@ export function CreditCard(  { type, number, expirationMonth, expirationYear, ba
       <p>{expirationMonth}</p>/<p>{expirationYear}</p>
       <p>{bank}</p>
       <p>{owner}</p>
-      <p>{cssClass}</p>
     </div>
   );
 }
