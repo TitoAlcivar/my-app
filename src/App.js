@@ -1,4 +1,5 @@
 import { Ejercicio1 } from "./components/Ejercicio1";
+import { People } from "./components/People";
 
 export const info = {
   type: <i class="fa-brands fa-cc-visa"></i>,
@@ -15,8 +16,8 @@ export const info = {
 function App() {
   return (
     <>
-      <Ejercicio1 info={info}/>
-
+      <Ejercicio1 info={info} />
+      <People/>
     </>
   )
 }

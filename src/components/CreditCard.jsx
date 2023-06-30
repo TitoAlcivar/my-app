@@ -4,7 +4,7 @@ import { info } from '../App';
 
 export function CreditCard(  { type, number, expirationMonth, expirationYear, bank, owner, cssClass }) {
   return (
-    <div className='credit flex'>
+    <div className='credit'>
       <h3>{type}</h3>
       <p>{number}</p>
       <p>{expirationMonth}</p>/<p>{expirationYear}</p>

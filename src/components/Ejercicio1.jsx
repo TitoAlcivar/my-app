@@ -3,7 +3,6 @@ import { CreditCard } from './CreditCard'
 
 export const Ejercicio1 = ({ info }) => {
 
-
     return (
         <div>
             <CreditCard type={info.type}

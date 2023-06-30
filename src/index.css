@@ -1,4 +1,6 @@
-.aqua{
-    color: aqua;
+.credit{
+    display: flex;
+    flex-direction: column;
+  
 
 }
