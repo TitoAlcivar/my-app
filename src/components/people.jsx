@@ -152,11 +152,13 @@ export const People = () => {
     return (
         <div className='row'>
             {persons.map((person) => {
-                return <Person name={person.name}
+                return <Person
+                    name={person.name}
                     rating={person.rating}
                     gender={person.gender}
                     job={person.job}
-                    city={person.city} />
+                    city={person.city} 
+                    />
             })}
         </div>
     )
